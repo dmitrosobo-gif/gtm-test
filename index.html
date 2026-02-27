@@ -24,13 +24,14 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <h1>Тестовая страница для GTM</h1>
-    <button onclick="showThankYou()">Нажми меня</button>
+
+    <!-- Кнопка с ID для отслеживания клика -->
+    <button id="conversionButton">Нажми меня</button>
 
     <script>
-        function showThankYou() {
-            // Заменяем содержимое страницы на текст "Спасибо"
-            document.body.innerHTML = "<h1>Спасибо</h1>";
-        }
+        document.getElementById("conversionButton").addEventListener("click", function() {
+            window.location.href = "thankyou.html";
+        });
     </script>
 
 </body>
