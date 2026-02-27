@@ -24,7 +24,14 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <h1>Тестовая страница для GTM</h1>
-    <button onclick="alert('Кнопка нажата!')">Нажми меня</button>
+    <button onclick="showThankYou()">Нажми меня</button>
+
+    <script>
+        function showThankYou() {
+            // Заменяем содержимое страницы на текст "Спасибо"
+            document.body.innerHTML = "<h1>Спасибо</h1>";
+        }
+    </script>
 
 </body>
 </html>
